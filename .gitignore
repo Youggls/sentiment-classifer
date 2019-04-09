@@ -1,0 +1,6 @@
+*.csv
+/outdata
+/data
+/__pycache__
+*.model
+*.txt
