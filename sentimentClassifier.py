@@ -85,4 +85,3 @@ class SentimentClassifier:
     
     def load(self, model_path):
         self.__model = word2vec.Word2Vec.load(model_path)
-    
