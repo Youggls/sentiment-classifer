@@ -76,4 +76,13 @@ class SentimentClassifier:
             raise RuntimeError('The Classifer has not been trained!')
         y_pred = self.__classifer.predict(self.__X_test)
         return precision_recall_fscore_support(self.__y_test, y_pred)
+
+    def save(self):
+        if self.__isInitial == Flase:
+            raise RuntimeError('The Classifer has not been initialized!')
+        
+        self.__model.save()
+    
+    def load(self, model_path):
+        self.__model = word2vec.Word2Vec.load(model_path)
     
