@@ -1,0 +1,3 @@
+# sentiment-classifer
+
+这个项目是一个基于word2vec和sklearn的简易中文情感词分类器
